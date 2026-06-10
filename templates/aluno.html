@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aluno</title>
+</head>
+<body>
+
+    <h1>Página do Aluno</h1>
+
+    <p>ID recebido pela URL: {{ id_aluno }}</p>
+   {% if nome %}
+    <p>Olá, {{ nome }}!</p>
+    {% else %}
+        <p>Olá, visitante!</p>
+    {% endif %}
+</body>
+</html>
