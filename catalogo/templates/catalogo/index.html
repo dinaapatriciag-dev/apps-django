@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+</head>
+<body>
+
+    <h1>Catálogo de Filmes e Séries</h1>
+
+    {% if obras %}
+
+        {% for obra in obras %}
+
+            <h2>{{ obra.titulo }}</h2>
+
+            <p>{{ obra.tipo }}</p>
+
+            <hr>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>Nenhuma obra encontrada.</p>
+
+    {% endif %}
+
+</body>
+</html>
