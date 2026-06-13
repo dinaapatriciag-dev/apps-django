@@ -16,6 +16,8 @@
 
             <p>{{ obra.tipo }}</p>
 
+            <a href="{% url 'catalogo:detalhes' obra.id %}">Ver detalhes</a>
+
             <hr>
 
         {% endfor %}
